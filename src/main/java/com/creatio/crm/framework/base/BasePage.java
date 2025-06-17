@@ -9,16 +9,18 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
+import com.creatio.crm.framework.reports.Reports;
 
 
-public class BasePage {
+
+public class BasePage extends Reports {
 	
 	private static WebDriver driver=null;
 	
 	
 	@BeforeMethod(alwaysRun = true)
 	@Parameters({ "BROWSER" })
-	public void launchBrowser(String browserName) {
+	public void setupBrowser(String browserName) {
 		if(browserName.equalsIgnoreCase("chrome")){
 			driver = new ChromeDriver();
 		}else if(browserName.equalsIgnoreCase("firefox")) {

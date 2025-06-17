@@ -23,7 +23,10 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.creatio.crm.framework.base.BasePage;
+import com.creatio.crm.framework.constants.Constants;
+import com.creatio.crm.framework.reports.Reports;
 import com.creatio.crm.framework.utilities.PropUtil;
+
 
 public class WebCommons {
 
@@ -113,9 +116,9 @@ public class WebCommons {
 
 	}
 
-	public void waitForElement(WebElement element, int seconds) {
+	public void waitForElement(WebElement element) {
 
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Constants.WAIT_TIME));
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 
@@ -279,5 +282,23 @@ public class WebCommons {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollTo(0, 0);");
 	}
+	
+	/**
+	 * Method to print logs in the report.
+	 */
+    public void log(String status, String message) {
+		if(status.equalsIgnoreCase("info")) {
+			Reports.logger.info("INFO: " + message);
+		} else if(status.equalsIgnoreCase("pass")) {
+			Reports.logger.pass("PASS: " + message);
+		} else if(status.equalsIgnoreCase("fail")) {
+			Reports.logger.fail("FAIL: " + message);
+		} else if(status.equalsIgnoreCase("warn")) {
+			Reports.logger.warning("WARNING: " + message);
+		} else {
+			System.out.println("UNKNOWN STATUS: " + message);
+		}
+	}
+
 
 }
