@@ -7,6 +7,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 
 import com.creatio.crm.application.steps.ForgotLoginSteps;
+import com.creatio.crm.application.steps.GoogleLoginPageSteps;
 import com.creatio.crm.application.steps.HomePageSteps;
 import com.creatio.crm.application.steps.LoginConfirmationpageSteps;
 import com.creatio.crm.application.steps.LoginPageSteps;
@@ -23,6 +24,7 @@ public class BaseTest extends BasePage{
 	public LoginConfirmationpageSteps confirmationPage;
 	public HomePageSteps homePage;
 	public ForgotLoginSteps forgotLoginPage;
+	public GoogleLoginPageSteps googleLoginPage;
 	
 
 	@BeforeMethod(alwaysRun = true,dependsOnMethods = "setupBrowser")
@@ -33,6 +35,7 @@ public class BaseTest extends BasePage{
 		confirmationPage = new LoginConfirmationpageSteps(driver);
 		homePage = new HomePageSteps(driver);
 		forgotLoginPage = new ForgotLoginSteps(driver);
+		googleLoginPage =new GoogleLoginPageSteps(driver);
 	}
 
 	@DataProvider(name = "data")

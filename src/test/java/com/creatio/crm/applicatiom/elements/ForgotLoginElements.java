@@ -10,7 +10,7 @@ public class ForgotLoginElements extends WebCommons{
 	@FindBy(xpath="//a[@data-qa='resend-link']")
 	protected WebElement ForgotLoginClickHere;
 	
-	@FindBy(xpath="//label[@class='title-label']")
+	@FindBy(xpath="//label[text()=' Almost done! ']")
 	protected WebElement ForgotLoginHeader;
 
 }

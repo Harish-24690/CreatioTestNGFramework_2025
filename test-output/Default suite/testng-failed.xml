@@ -7,7 +7,7 @@
         <methods>
           <include name="setupReport"/>
           <include name="teardownDriver"/>
-          <include name="verifyLoginWithValidCredentials"/>
+          <include name="VerifyForgotLoginFeature"/>
           <include name="setupBrowser"/>
           <include name="initializePages"/>
         </methods>

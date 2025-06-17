@@ -44,6 +44,9 @@ public class LoginPageElements extends WebCommons{
    @FindBy(xpath="//mat-error[text()='Password is required']")
    protected WebElement PasswordLoginErrorMessage;
    
+   @FindBy(xpath="//mat-error[text()='Invalid email or password']")
+   protected WebElement InvalidLoginErrorMessage;
+   
    
    
 	

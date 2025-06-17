@@ -67,6 +67,8 @@ public class LoginPageSteps extends LoginPageElements {
 				"Login error message not displayed on invalid password.");
 		log("pass", "Password error message verified successfully");
 	}
+	
+	
 
 	public void clickOnForgotLoginLink() {
 		waitForElement(forgotPassLink);
@@ -82,7 +84,8 @@ public class LoginPageSteps extends LoginPageElements {
 
 	public void verifyGoogleLoginlink() {
 		waitForElement(googleLoginLink);
-		click(googleLoginLink);
+		jsClick(googleLoginLink);
+//		click(googleLoginLink);
 		log("info", "clicked on google login button");
 	}
 
@@ -102,5 +105,13 @@ public class LoginPageSteps extends LoginPageElements {
 		waitForElement(header);
 		Assert.assertTrue(isElementDisplayed(header), "Login page header not displayed after logout.");
 		log("pass", "Logout is successful, Login page header text is displayed");
+	}
+
+	public void verifyInvalidLoginErrorMessage(String expectedErrorMessage) {
+		waitForElement(InvalidLoginErrorMessage);
+		String actualErrorMessage = getElementText(InvalidLoginErrorMessage);
+		Assert.assertEquals(actualErrorMessage, expectedErrorMessage, "Error message does not match expected.");
+		log("pass", "Error message verified successfully: " + actualErrorMessage);
+		
 	}
 }

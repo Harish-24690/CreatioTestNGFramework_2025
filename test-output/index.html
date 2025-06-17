@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,6 +102,21 @@
                       <a href="#" panel-name="suite-E2ETSuite" class="show-methods passed suite-E2ETSuite"> (show)</a> <!-- show-methods passed suite-E2ETSuite -->
                     </span>
                     <div class="method-list-content passed suite-E2ETSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-E2ETSuite" title="com.creatio.crm.application.tests.ApplicationTest" class="method navigator-link" hash-for-method="verifyForgotLoginFeature(testautomation0691@gmail.com, null, Almost done!)">verifyForgotLoginFeature(testautomation0691@gmail.com, null, Almost done!)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-E2ETSuite" title="com.creatio.crm.application.tests.ApplicationTest" class="method navigator-link" hash-for-method="verifyGoogleLogin">verifyGoogleLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-E2ETSuite" title="com.creatio.crm.application.tests.ApplicationTest" class="method navigator-link" hash-for-method="verifyLoginInvalidCredentials(testautomation0691@gmail.com, Harish, Invalid email or password)">verifyLoginInvalidCredentials(testautomation0691@gmail.com, Harish, Invalid email or password)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-E2ETSuite" title="com.creatio.crm.application.tests.ApplicationTest" class="method navigator-link" hash-for-method="verifyLoginWithValidCredentials(testautomation0691@gmail.com, Harish@1997, All processes)">verifyLoginWithValidCredentials(testautomation0691@gmail.com, Harish@1997, All processes)</a> <!-- method navigator-link -->
@@ -125,6 +140,29 @@
               <span class="class-name">com.creatio.crm.application.tests.ApplicationTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyForgotLoginFeature(testautomation0691@gmail.com, null, Almost done!)">
+                  </a> <!-- verifyForgotLoginFeature(testautomation0691@gmail.com, null, Almost done!) -->
+                  <span class="method-name">verifyForgotLoginFeature</span>
+                  <span class="parameters">(testautomation0691@gmail.com, null, Almost done!)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyGoogleLogin">
+                  </a> <!-- verifyGoogleLogin -->
+                  <span class="method-name">verifyGoogleLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginInvalidCredentials(testautomation0691@gmail.com, Harish, Invalid email or password)">
+                  </a> <!-- verifyLoginInvalidCredentials(testautomation0691@gmail.com, Harish, Invalid email or password) -->
+                  <span class="method-name">verifyLoginInvalidCredentials</span>
+                  <span class="parameters">(testautomation0691@gmail.com, Harish, Invalid email or password)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="verifyLoginWithValidCredentials(testautomation0691@gmail.com, Harish@1997, All processes)">
@@ -191,16 +229,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyLoginWithValidCredentials')
 data.setCell(0, 2, 'com.creatio.crm.application.tests.ApplicationTest')
-data.setCell(0, 3, 14629);
+data.setCell(0, 3, 12366);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyGoogleLogin')
+data.setCell(1, 2, 'com.creatio.crm.application.tests.ApplicationTest')
+data.setCell(1, 3, 10889);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyLoginInvalidCredentials')
+data.setCell(2, 2, 'com.creatio.crm.application.tests.ApplicationTest')
+data.setCell(2, 3, 9207);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyForgotLoginFeature')
+data.setCell(3, 2, 'com.creatio.crm.application.tests.ApplicationTest')
+data.setCell(3, 3, 9035);
 window.suiteTableData['E2ETSuite']= { tableData: data, tableDiv: 'times-div-E2ETSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <span class="suite-total-time">Total running time: 41 seconds</span>
               <div id="times-div-E2ETSuite">
               </div> <!-- times-div-E2ETSuite -->
             </div> <!-- times-div -->
@@ -233,19 +283,67 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">setupBrowser(chrome)</span>
-                <span class="method-start">928 ms</span>
+                <span class="method-start">742 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">initializePages</span>
-                <span class="method-start">2856 ms</span>
+                <span class="method-start">2004 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyLoginWithValidCredentials(testautomation0691@gmail.com, Harish@1997, All processes)</span>
-                <span class="method-start">2922 ms</span>
+                <span class="method-name">verifyForgotLoginFeature(testautomation0691@gmail.com, null, Almost done!)</span>
+                <span class="method-start">2039 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardownDriver</span>
-                <span class="method-start">18139 ms</span>
+                <span class="method-start">11273 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupBrowser(chrome)</span>
+                <span class="method-start">11488 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initializePages</span>
+                <span class="method-start">12346 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginInvalidCredentials(testautomation0691@gmail.com, Harish, Invalid email or password)</span>
+                <span class="method-start">12351 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownDriver</span>
+                <span class="method-start">21589 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupBrowser(chrome)</span>
+                <span class="method-start">21735 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initializePages</span>
+                <span class="method-start">22573 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyGoogleLogin</span>
+                <span class="method-start">22575 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownDriver</span>
+                <span class="method-start">33505 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupBrowser(chrome)</span>
+                <span class="method-start">33845 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initializePages</span>
+                <span class="method-start">34724 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithValidCredentials(testautomation0691@gmail.com, Harish@1997, All processes)</span>
+                <span class="method-start">34728 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownDriver</span>
+                <span class="method-start">47128 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

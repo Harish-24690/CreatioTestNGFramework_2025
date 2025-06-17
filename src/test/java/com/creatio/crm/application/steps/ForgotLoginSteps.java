@@ -14,7 +14,7 @@ public class ForgotLoginSteps extends ForgotLoginElements{
 	
 	public void verifyForgotLoginHeader(String ForgotLoginPageHeader) {
 		waitForElement(ForgotLoginHeader);
-		Assert.assertEquals(ForgotLoginHeader,ForgotLoginPageHeader);
+		Assert.assertEquals(getElementText(ForgotLoginHeader),ForgotLoginPageHeader);
 		log("Pass","Forgot login Page header has beeb verified");
 	}
 
